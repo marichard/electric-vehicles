@@ -1,2 +1,2 @@
-# electric-vehicles
+# Electric-Vehicles
 Electric Vehicle project
