@@ -17,3 +17,6 @@ clean_df <- df %>%
 total_vehicles <- nrow(clean_df)
 tesla_vehicles <- clean_df %>% filter(Tesla == "TESLA") %>% nrow()
 tesla_market_share <- round(tesla_vehicles/total_vehicles * 100, 1)
+
+# 2. Top Tesla Models Selling in the area
+# - How much are we making from these models?
