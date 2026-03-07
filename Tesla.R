@@ -20,3 +20,8 @@ tesla_market_share <- round(tesla_vehicles/total_vehicles * 100, 1)
 
 # 2. Top Tesla Models Selling in the area
 # - How much are we making from these models?
+make_model_sold <- clean_df %>%
+  filter(Tesla == "TESLA") %>%
+  group_by(Make,Model) %>%
+  summarise(count_sold = n(), .groups = "drop") %>%
+  arrange(desc(count_sold))
